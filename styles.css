@@ -3,10 +3,11 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background: #f4f4f4;
+    background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+    color: #333;
 }
 header {
-    background: #007bff;
+    background: linear-gradient(90deg, #007bff, #0056b3);
     color: white;
     padding: 20px;
     font-size: 1.2em;
@@ -19,12 +20,66 @@ nav a {
 }
 .hero {
     padding: 60px 20px;
-    background: #0056b3;
     color: white;
-    border-radius: 0 0 20px 20px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
 }
-footer {
-    background: #333;
+.about, .services-list, .contact-details {
+    padding: 30px;
+    background: white;
+    margin: 30px auto;
+    max-width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.services-list ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.services-list li {
+    background: #007bff;
     color: white;
     padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.contact-details {
+    background: #f9f9f9;
+    padding: 20px;
+    border-left: 5px solid #007bff;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form label {
+    margin-top: 10px;
+}
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background: #007bff;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background: #0056b3;
+}
+#map {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
 }
