@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ИП Шкляревский - Компьютерная техника</title>
+    <title>IT-услуги - ИП Шкляревский</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
@@ -11,31 +11,64 @@
     <header>
         <h1>Магазин компьютерной техники</h1>
         <nav>
-            <a href="index.html">Главная</a>
-            <a href="services.html">Услуги</a>
-            <a href="contact.html">Контакты</a>
+            <a href="#about">О нас</a>
+            <a href="#services">Услуги</a>
+            <a href="#contact">Контакты</a>
         </nav>
     </header>
     
     <section class="hero">
-        <h2>Лучшие решения для вашего комфорта</h2>
-        <div class="slider">
-            <div class="slides">
-                <div class="slide">Скидки на сборку ПК!</div>
-                <div class="slide">Бесплатная диагностика техники</div>
-                <div class="slide">Разработка сайтов под ключ</div>
-            </div>
-        </div>
+        <h2>Компьютерная техника, ремонт и разработка ПО</h2>
     </section>
     
-    <section class="about">
-        <h2>О нас</h2>
-        <p>Мы занимаемся продажей, ремонтом и обслуживанием компьютерной техники, а также разрабатываем ПО и веб-сайты.</p>
+    <section id="about" class="about">
+        <h2>О компании</h2>
+        <p>Мы предоставляем полный спектр услуг по ремонту, сборке и обслуживанию компьютеров, разработке программного обеспечения и созданию веб-сайтов.</p>
+    </section>
+    
+    <section id="services" class="services-list">
+        <h2>Наши услуги</h2>
+        <ul>
+            <li>Ремонт и обслуживание ПК</li>
+            <li>Сборка компьютеров</li>
+            <li>Разработка ПО</li>
+            <li>Создание веб-сайтов</li>
+            <li>Диагностика и тестирование</li>
+        </ul>
+    </section>
+    
+    <section id="contact" class="contact-details">
+        <h2>Контакты</h2>
+        <p>Адрес: г. Гатчина, проспект 25 Октября, д. 42 А, ТЦ «Мегаполис»</p>
+        <p>Email: info@itcompany.ru</p>
+        <p>Телефон: +7 (999) 123-45-67</p>
+
+        <!-- Форма обратной связи -->
+        <h3>Свяжитесь с нами</h3>
+        <form id="contactForm">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Отправить</button>
+            <p id="formMessage"></p>
+        </form>
+
+        <!-- Интерактивная карта Google Maps -->
+        <h3>Мы на карте</h3>
+        <div id="map"></div>
     </section>
     
     <footer>
-        <p>Адрес: г. Гатчина, проспект 25 Октября, д. 42 А, ТЦ «Мегаполис»</p>
-        <p>Email: info@itcompany.ru | Телефон: +7 (999) 123-45-67</p>
+        <p>&copy; 2025 IT-Компания. Все права защищены.</p>
     </footer>
+
+    <!-- Google Maps API -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
 </body>
 </html>
