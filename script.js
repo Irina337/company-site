@@ -21,14 +21,18 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Функция инициализации карты
-function initMap() {
-    const location = { lat: 59.5675, lng: 30.1289 }; // Координаты Гатчины
-    const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 15,
-        center: location,
+ymaps.ready(init);
+
+function init() {
+    var myMap = new ymaps.Map("map", {
+        center: [59.5630, 30.1245], // Координаты Гатчины
+        zoom: 15
     });
-    new google.maps.Marker({
-        position: location,
-        map: map,
+
+    var myPlacemark = new ymaps.Placemark([59.5630, 30.1245], {
+        hintContent: "Наш офис",
+        balloonContent: "Мы находимся здесь!"
     });
+
+    myMap.geoObjects.add(myPlacemark);
 }
