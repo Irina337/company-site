@@ -29,7 +29,7 @@ function init() {
         zoom: 15
     });
 
-    var myPlacemark = new ymaps.Placemark([59.5630, 30.1245], {
+    var myPlacemark = new ymaps.Placemark([59.575414, 30.127173], {
         hintContent: "Наш офис",
         balloonContent: "Мы находимся здесь!"
     });
